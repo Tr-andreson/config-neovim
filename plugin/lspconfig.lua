@@ -135,10 +135,28 @@ nvim_lsp.cssls.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 nvim_lsp.astro.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
+
+nvim_lsp.dockerls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+nvim_lsp.docker_compose_language_service.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+
+
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
